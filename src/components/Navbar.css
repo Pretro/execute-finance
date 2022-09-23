@@ -1,3 +1,9 @@
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
 .header {
     position: fixed;
     height: 90px;
@@ -7,7 +13,7 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(0,0,0,.9);
+    background-color: var(--mainColor);
 }
 
 .header .navbar {
@@ -21,7 +27,11 @@
 }
 
 .header .nav-menu a {
-    color: #ffffff;
+    color: white;
+}
+
+.header .nav-menu a:hover {
+    color: green;
 }
 
 .header .navbar img {
@@ -43,10 +53,27 @@
     border-bottom: 3px solid var(--secondary-color);
 }
 
+.header .navbar .icon {
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #1eb2a6;
+	transition: 0.5s;
+	}
+
+.header .navbar .icon:hover {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+      }
+
 .hamburger {
     display: none;
 }
-
 
 @media screen and (max-width:940px) {
     .header {

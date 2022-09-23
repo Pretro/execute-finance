@@ -30,12 +30,24 @@ const Navbar = () => {
                         <a href='#about' onClick={closeMenu}>About</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#testimonials' onClick={closeMenu}>Testimonials</a>
+                        <a href='#team' onClick={closeMenu}>Team</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#demo' onClick={closeMenu}>Demo</a>
+                        <a href='/#blog' onClick={closeMenu}>Blog</a>
+                    </li>
+					<li className='nav-item'>
+                        <a href='/#shop' onClick={closeMenu}>Shop</a>
+                    </li>
+					<li className='nav-item'>
+                        <a href='/#contact' onClick={closeMenu}>Contact</a>
                     </li>
                 </ul>
+                <div className='social'>
+          			<i className='fab fa-facebook-f icon'></i>
+          			<i className='fab fa-instagram icon'></i>
+          			<i className='fab fa-twitter icon'></i>
+          			<i className='fab fa-youtube icon'></i>
+        		</div>
             </nav>
         </div>
     )
